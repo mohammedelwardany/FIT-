@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="../src/assets/img/logos/logo.png" alt="..."/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="Login.html">Log in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col">
+                <div class="container-fluid bg-light bg-opacity-75 rounded">
+                    <div class="container p-5">
+                        <div class="masthead-subheading text-dark">Register now</div>
+                        <form id="form1">
+                        <div class="row">
+                            <div class="col-sm-1 col-md-3">
+                            </div>
+                            <div class="col">
+                                <div class="form-group mx-sm-2 mb-3">
+                                    <!-- Email address input-->
+                                    <p class="text-dark">name</p>
+                                    <input class="form-control" id="name" type="name" placeholder="name *" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">An name is required.</div>
+                                </div>
+
+                                <div class="m-3">
+                                    <p>ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</p>
+                                </div>
+                                <div class="form-group mx-2 mb-3">
+                                    <!-- Email address input-->
+                                    <div class="form-group mx-sm-2 mb-3">
+                                        <!-- Email address input-->
+                                        <p class="text-dark">email</p>
+                                        <input class="form-control" id="email" type="email" placeholder="Your Email *"  />
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                    </div>  
+                                    <p class="text-dark">password</p>
+                                    <input class="form-control" id="password" type="password" placeholder="Your password *"  />
+                                    <div class="invalid-feedback" data-sb-feedback="password:required">An password is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="password:password">password is not valid.</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+    
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary btn-xl my-5" onclick="formForwerd()">next</button>
+                                <!-- <a class="btn btn-primary btn-xl my-5" href="" onclick="formForwerd()" id="nextBtn">next</a> -->
+                                <!-- <input class="btn btn-primary btn-xl my-5" id="submit" type="submit" placeholder="submit" /> -->
+<script>
+
+const forms = ["form1", "form2", "form3"];
+var x = 0
+
+function formForwerd(){
+    // document.getElementById(`form${x}`).className="d-none";
+    document.getElementById(forms[x]).className ="d-none";
+    x=x+1
+    document.getElementById(forms[x]).className ="d-block";
+    
+    // document.getElementById(`form${x}`).className="";   
+}
+function formBackward(){
+    // document.getElementById(`form${x}`).className="d-none";
+    document.getElementById(forms[x]).className ="d-none";
+    x=x-1
+    document.getElementById(forms[x]).className ="d-block";
+    
+    // document.getElementById(`form${x}`).className="";   
+}
+</script>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- mwkefkm -->
+                    <form id="form2" class="d-none">
+                        <div class="row">
+                            <div class="col-sm-1 col-md-3">
+                            </div>
+                            <div class="col">
+                                <div class="form-group mx-sm-2 mb-3">
+                                    <!-- Email address input-->
+                                    <p class="text-dark">Gander</p>
+              
+                                    <div class="btn-group">
+                                        <input type="radio" class="btn-check" name="gander" value="M"  checked autocomplete="off"/>
+                                        <label class="btn btn-primary" for="male"><span class="mx-4 text-dark">male</span></label>
+                                      
+                                        <input type="radio" class="btn-check" name="gander" value="F" autocomplete="off" />
+                                        <label class="btn btn-primary" for="female"><span class="mx-4 text-dark">female</span></label>
+                                      
+                                      </div>
+                                   
+                                      
+                                </div>
+                      
+                                <div class="form-group mx-sm-2 mb-3">
+                                    <!-- Email address input-->
+                                    <p class="text-dark">Age</p>
+                                    <input class="form-control" id="age" type="number" placeholder="Your age *" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="age:required">An age is required.</div>
+                                </div>
+                                <div class="form-group mx-sm-2 mb-3">
+                                    <p class="text-dark">Nationality</p>
+                                    <select class="form-control" name="nationality" id="nationality">
+                                        <option value="AFGHAN">AFGHAN</option>
+                                        <option value="ALBANIAN">ALBANIAN</option>
+                                        <option value="ALGERIAN">ALGERIAN</option>
+                                        <option value="AMERICAN">AMERICAN</option>
+                                        <option value="ANDORRAN">ANDORRAN</option>
+                                        <option value="ANGOLAN">ANGOLAN</option>
+                                        <option value="ANTIGUANS">ANTIGUANS</option>
+                                        <option value="ARGENTINEAN">ARGENTINEAN</option>
+                                        <option value="ARMENIAN">ARMENIAN</option>
+                                        <option value="AUSTRALIAN">AUSTRALIAN</option>
+                                        <option value="AUSTRIAN">AUSTRIAN</option>
+                                        <option value="AZERBAIJANI">AZERBAIJANI</option>
+                                        <option value="BAHAMIAN">BAHAMIAN</option>
+                                        <option value="BAHRAINI">BAHRAINI</option>
+                                        <option value="BANGLADESHI">BANGLADESHI</option>
+                                        <option value="BARBADIAN">BARBADIAN</option>
+                                        <option value="BARBUDANS">BARBUDANS</option>
+                                        <option value="BATSWANA">BATSWANA</option>
+                                        <option value="BELARUSIAN">BELARUSIAN</option>
+                                        <option value="BELGIAN">BELGIAN</option>
+                                        <option value="BELIZEAN">BELIZEAN</option>
+                                        <option value="BENINESE">BENINESE</option>
+                                        <option value="BHUTANESE">BHUTANESE</option>
+                                        <option value="BOLIVIAN">BOLIVIAN</option>
+                                        <option value="BOSNIAN">BOSNIAN</option>
+                                        <option value="BRAZILIAN">BRAZILIAN</option>
+                                        <option value="BRITISH">BRITISH</option>
+                                        <option value="BRUNEIAN">BRUNEIAN</option>
+                                        <option value="BULGARIAN">BULGARIAN</option>
+                                        <option value="BURKINABE">BURKINABE</option>
+                                        <option value="BURMESE">BURMESE</option>
+                                        <option value="BURUNDIAN">BURUNDIAN</option>
+                                        <option value="CAMBODIAN">CAMBODIAN</option>
+                                        <option value="CAMEROONIAN">CAMEROONIAN</option>
+                                        <option value="CANADIAN">CANADIAN</option>
+                                        <option value="CAPE VERDEAN">CAPE VERDEAN</option>
+                                        <option value="CENTRAL AFRICAN">CENTRAL AFRICAN</option>
+                                        <option value="CHADIAN">CHADIAN</option>
+                                        <option value="CHILEAN">CHILEAN</option>
+                                        <option value="CHINESE">CHINESE</option>
+                                        <option value="COLOMBIAN">COLOMBIAN</option>
+                                        <option value="COMORAN">COMORAN</option>
+                                        <option value="CONGOLESE">CONGOLESE</option>
+                                        <option value="COSTA RICAN">COSTA RICAN</option>
+                                        <option value="CROATIAN">CROATIAN</option>
+                                        <option value="CUBAN">CUBAN</option>
+                                        <option value="CYPRIOT">CYPRIOT</option>
+                                        <option value="CZECH">CZECH</option>
+                                        <option value="DANISH">DANISH</option>
+                                        <option value="DJIBOUTI">DJIBOUTI</option>
+                                        <option value="DOMINICAN">DOMINICAN</option>
+                                        <option value="DUTCH">DUTCH</option>
+                                        <option value="EAST TIMORESE">EAST TIMORESE</option>
+                                        <option value="ECUADOREAN">ECUADOREAN</option>
+                                        <option value="EGYPTIAN">EGYPTIAN</option>
+                                        <option value="EMIRIAN">EMIRIAN</option>
+                                        <option value="EQUATORIAL GUINEAN">EQUATORIAL GUINEAN
+                                        </option>
+                                        <option value="ERITREAN">ERITREAN</option>
+                                        <option value="ESTONIAN">ESTONIAN</option>
+                                        <option value="ETHIOPIAN">ETHIOPIAN</option>
+                                        <option value="FIJIAN">FIJIAN</option>
+                                        <option value="FILIPINO">FILIPINO</option>
+                                        <option value="FINNISH">FINNISH</option>
+                                        <option value="FRENCH">FRENCH</option>
+                                        <option value="GABONESE">GABONESE</option>
+                                        <option value="GAMBIAN">GAMBIAN</option>
+                                        <option value="GEORGIAN">GEORGIAN</option>
+                                        <option value="GERMAN">GERMAN</option>
+                                        <option value="GHANAIAN">GHANAIAN</option>
+                                        <option value="GREEK">GREEK</option>
+                                        <option value="GRENADIAN">GRENADIAN</option>
+                                        <option value="GUATEMALAN">GUATEMALAN</option>
+                                        <option value="GUINEA-BISSAUAN">GUINEA-BISSAUAN</option>
+                                        <option value="GUINEAN">GUINEAN</option>
+                                        <option value="GUYANESE">GUYANESE</option>
+                                        <option value="HAITIAN">HAITIAN</option>
+                                        <option value="HERZEGOVINIAN">HERZEGOVINIAN</option>
+                                        <option value="HONDURAN">HONDURAN</option>
+                                        <option value="HUNGARIAN">HUNGARIAN</option>
+                                        <option value="ICELANDER">ICELANDER</option>
+                                        <option value="INDIAN">INDIAN</option>
+                                        <option value="INDONESIAN">INDONESIAN</option>
+                                        <option value="IRANIAN">IRANIAN</option>
+                                        <option value="IRAQI">IRAQI</option>
+                                        <option value="IRISH">IRISH</option>
+                                        <option value="ISRAESLI">ISRAELI</option>
+                                        <option value="ITALIAN">ITALIAN</option>
+                                        <option value="IVORIAN">IVORIAN</option>
+                                        <option value="JAMAICAN">JAMAICAN</option>
+                                        <option value="JAPANESE">JAPANESE</option>
+                                        <option value="JORDANIAN">JORDANIAN</option>
+                                        <option value="KAZAKHSTANI">KAZAKHSTANI</option>
+                                        <option value="KENYAN">KENYAN</option>
+                                        <option value="KITTIAN AND NEVISIAN">KITTIAN AND NEVISIAN
+                                        </option>
+                                        <option value="KUWAITI">KUWAITI</option>
+                                        <option value="KYRGYZ">KYRGYZ</option>
+                                        <option value="LAOTIAN">LAOTIAN</option>
+                                        <option value="LATVIAN">LATVIAN</option>
+                                        <option value="LEBANESE">LEBANESE</option>
+                                        <option value="LIBERIAN">LIBERIAN</option>
+                                        <option value="LIBYAN">LIBYAN</option>
+                                        <option value="LIECHTENSTEINER">LIECHTENSTEINER</option>
+                                        <option value="LITHUANIAN">LITHUANIAN</option>
+                                        <option value="LUXEMBOURGER">LUXEMBOURGER</option>
+                                        <option value="MACEDONIAN">MACEDONIAN</option>
+                                        <option value="MALAGASY">MALAGASY</option>
+                                        <option value="MALAWIAN">MALAWIAN</option>
+                                        <option value="MALAYSIAN">MALAYSIAN</option>
+                                        <option value="MALDIVAN">MALDIVAN</option>
+                                        <option value="MALIAN">MALIAN</option>
+                                        <option value="MALTESE">MALTESE</option>
+                                        <option value="MARSHALLESE">MARSHALLESE</option>
+                                        <option value="MAURITANIAN">MAURITANIAN</option>
+                                        <option value="MAURITIAN">MAURITIAN</option>
+                                        <option value="MEXICAN">MEXICAN</option>
+                                        <option value="MICRONESIAN">MICRONESIAN</option>
+                                        <option value="MOLDOVAN">MOLDOVAN</option>
+                                        <option value="MONACAN">MONACAN</option>
+                                        <option value="MONGOLIAN">MONGOLIAN</option>
+                                        <option value="MOROCCAN">MOROCCAN</option>
+                                        <option value="MOSOTHO">MOSOTHO</option>
+                                        <option value="MOTSWANA">MOTSWANA</option>
+                                        <option value="MOZAMBICAN">MOZAMBICAN</option>
+                                        <option value="NAMIBIAN">NAMIBIAN</option>
+                                        <option value="NAURUAN">NAURUAN</option>
+                                        <option value="NEPALESE">NEPALESE</option>
+                                        <option value="NEW ZEALANDER">NEW ZEALANDER</option>
+                                        <option value="NI-VANUATU">NI-VANUATU</option>
+                                        <option value="NICARAGUAN">NICARAGUAN</option>
+                                        <option value="NIGERIEN">NIGERIEN</option>
+                                        <option value="NORTH KOREAN">NORTH KOREAN</option>
+                                        <option value="NORTHERN IRISH">NORTHERN IRISH</option>
+                                        <option value="NORWEGIAN">NORWEGIAN</option>
+                                        <option value="OMANI">OMANI</option>
+                                        <option value="PAKISTANI">PAKISTANI</option>
+                                        <option value="PALAUAN">PALAUAN</option>
+                                        <option value="PANAMANIAN">PANAMANIAN</option>
+                                        <option value="PAPUA NEW GUINEAN">PAPUA NEW GUINEAN</option>
+                                        <option value="PARAGUAYAN">PARAGUAYAN</option>
+                                        <option value="PERUVIAN">PERUVIAN</option>
+                                        <option value="POLISH">POLISH</option>
+                                        <option value="PORTUGUESE">PORTUGUESE</option>
+                                        <option value="QATARI">QATARI</option>
+                                        <option value="ROMANIAN">ROMANIAN</option>
+                                        <option value="RUSSIAN">RUSSIAN</option>
+                                        <option value="RWANDAN">RWANDAN</option>
+                                        <option value="SAINT LUCIAN">SAINT LUCIAN</option>
+                                        <option value="SALVADORAN">SALVADORAN</option>
+                                        <option value="SAMOAN">SAMOAN</option>
+                                        <option value="SAN MARINESE">SAN MARINESE</option>
+                                        <option value="SAO TOMEAN">SAO TOMEAN</option>
+                                        <option value="SAUDI">SAUDI</option>
+                                        <option value="SCOTTISH">SCOTTISH</option>
+                                        <option value="SENEGALESE">SENEGALESE</option>
+                                        <option value="SERBIAN">SERBIAN</option>
+                                        <option value="SEYCHELLOIS">SEYCHELLOIS</option>
+                                        <option value="SIERRA LEONEAN">SIERRA LEONEAN</option>
+                                        <option value="SINGAPOREAN">SINGAPOREAN</option>
+                                        <option value="SLOVAKIAN">SLOVAKIAN</option>
+                                        <option value="SLOVENIAN">SLOVENIAN</option>
+                                        <option value="SOLOMON ISLANDER">SOLOMON ISLANDER</option>
+                                        <option value="SOMALI">SOMALI</option>
+                                        <option value="SOUTH AFRICAN">SOUTH AFRICAN</option>
+                                        <option value="SOUTH KOREAN">SOUTH KOREAN</option>
+                                        <option value="SPANISH">SPANISH</option>
+                                        <option value="SRI LANKAN">SRI LANKAN</option>
+                                        <option value="SUDANESE">SUDANESE</option>
+                                        <option value="SURINAMER">SURINAMER</option>
+                                        <option value="SWAZI">SWAZI</option>
+                                        <option value="SWEDISH">SWEDISH</option>
+                                        <option value="SWISS">SWISS</option>
+                                        <option value="SYRIAN">SYRIAN</option>
+                                        <option value="TAIWANESE">TAIWANESE</option>
+                                        <option value="TAJIK">TAJIK</option>
+                                        <option value="TANZANIAN">TANZANIAN</option>
+                                        <option value="THAI">THAI</option>
+                                        <option value="TOGOLESE">TOGOLESE</option>
+                                        <option value="TONGAN">TONGAN</option>
+                                        <option value="TRINIDADIAN OR TOBAGONIAN">TRINIDADIAN OR
+                                            TOBAGONIAN</option>
+                                        <option value="TUNISIAN">TUNISIAN</option>
+                                        <option value="TURKISH">TURKISH</option>
+                                        <option value="TUVALUAN">TUVALUAN</option>
+                                        <option value="UGANDAN">UGANDAN</option>
+                                        <option value="UKRAINIAN">UKRAINIAN</option>
+                                        <option value="URUGUAYAN">URUGUAYAN</option>
+                                        <option value="UZBEKISTANI">Uzbekistani</option>
+                                        <option value="VENEZUELAN">VENEZUELAN</option>
+                                        <option value="VIETNAMESE">VIETNAMESE</option>
+                                        <option value="WELSH">WELSH</option>
+                                        <option value="YEMENITE">YEMENITE</option>
+                                        <option value="ZAMBIAN">ZAMBIAN</option>
+                                        <option value="ZIMBABWEAN">ZIMBABWEAN</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn btn-dark btn-xl my-5" href="#" onclick="formBackward()">previous</a>
+
+                            </div>
+                            <div class="col">
+    
+                            </div>
+                            <div class="col">
+                                <a class="btn btn-primary btn-xl my-5" href="#" onclick="formForwerd()">next</a>
+                                <!-- <input class="btn btn-primary btn-xl my-5" id="submit" type="submit" placeholder="submit" /> -->
+
+                            </div>
+                        </div>
+                    </form>
+                    <!-- uidhiofh -->
+                    <form id="form3" class="d-none">
+                        <div class="row">
+                            <div class="col-sm-1 col-md-3">
+                            </div>
+                            <div class="col">
+                                <div class="form-group mx-sm-2 mb-3">
+                                    <!-- Email address input-->
+                                    <p class="text-dark">weight</p>
+                                    <input class="form-control" id="weight" type="number" placeholder="Your weight *" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="weight:required">An weight is required.</div>
+                                </div>
+                                <div class="form-group mx-sm-2 mb-3">
+                                    <!-- Email address input-->
+                                    <p class="text-dark">height</p>
+                                    <input class="form-control" id="height" type="number" placeholder="Your height *" data-sb-validations="required" />
+                                    <div class="invalid-feedback" data-sb-feedback="height:required">An height is required.</div>
+                                </div>
+
+                                <div class="form-group mx-sm-2 mb-3">
+                                    <!-- Email address input-->
+                                    <p class="text-dark">Activity level</p>
+              
+                                    <div class="btn-group">
+                                        <input type="radio" class="btn-check" name="Activity" id="option1activity" value=3 autocomplete="off" checked/>
+                                        <label class="btn btn-primary" for="option1" ><span class="mx-4 text-dark">high</span></label>
+                                      
+                                        <input type="radio" class="btn-check" name="Activity" id="option2activity" value=2 autocomplete="off" />
+                                        <label class="btn btn-primary" for="option2"><span class="mx-4 text-dark">mid</span></label>
+
+                                        <input type="radio" class="btn-check" name="Activity" id="option3activity" value=1 autocomplete="off" />
+                                        <label class="btn btn-primary" for="option3"><span class="mx-4 text-dark">low</span></label>
+                                      
+                                      </div>
+                                   
+                                      
+                                </div>
+
+
+                                <div class="form-check form-switch m-5">
+                                    <input class="form-check-input ml-5" type="checkbox" id="flexSwitchCheckChecked">
+                                    <label class="form-check-label mr-5 text-dark" for="flexSwitchCheckChecked">accept all rights</label>
+                                  </div>
+
+                            </div>
+                            <div class="col-sm-1 col-md-3">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn btn-dark btn-xl my-5" href="#" onclick="formBackward()">previous</a>
+
+                            </div>
+                            <div class="col">
+    
+                            </div>
+                            <div class="col">
+                                <a class="btn btn-primary btn-xl my-5" onclick="RegisterRequist()">submit</a>
+                                <!-- <button class="btn btn-primary btn-xl my-5" }>SUBMIT</button> -->
+
+                                <!-- <input class="btn btn-primary btn-xl my-5" id="submit" type="submit" onsubmit="e.preventDefault();RegisterRequist()" placeholder="submit" /> -->
+
+                            </div>
+                        </div>
+                    </form>
+                    </div> 
+
+                       </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+
+        </header>
+       
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
